@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+  <title>API Helper and WebSocket Connection README</title>
 </head>
 <body>
 
@@ -14,65 +14,35 @@
 <h2>Setup</h2>
 
 <ol>
-  <li>Clone the repository:
-    <pre><code>git clone https://github.com/dinesh851/api_helper</code></pre>
-  </li>
-  <li>Navigate to the project directory:
-    <pre><code>cd api-websocket-helper</code></pre>
-  </li>
-  <li>Install the required dependencies:
-    <pre><code>pip install -r requirements.txt</code></pre>
-  </li>
+  <li>Clone the repository: <code>git clone https://github.com/your_username/api-websocket-helper.git</code></li>
+  <li>Navigate to the project directory: <code>cd api-websocket-helper</code></li>
+  <li>Install the required dependencies: <code>pip install -r requirements.txt</code></li>
 </ol>
 
 <h2>API Helper</h2>
 
-<p>The API helper facilitates interactions with the broker's API. To use the API helper, follow these steps:</p>
-
 <ol>
-  <li>Import the <code>api_helper</code> module:
-    <pre><code>from api_helper import APIHelper</code></pre>
-  </li>
-  <li>Instantiate the <code>APIHelper</code> class with your API credentials:
-    <pre><code>api = APIHelper(api_key='your_api_key', secret_key='your_secret_key')</code></pre>
-  </li>
+  <li>Import the <code>api_helper</code> module: <code>from api_helper import APIHelper</code></li>
+  <li>Instantiate the <code>APIHelper</code> class with your API credentials: <code>api = APIHelper(api_key='your_api_key', secret_key='your_secret_key')</code></li>
   <li>Utilize the available methods within the <code>APIHelper</code> class to interact with the broker's API.</li>
 </ol>
 
 <h2>WebSocket Connection</h2>
 
-<p>The WebSocket connection allows real-time data streaming from the broker's server to your application. To use the WebSocket connection, follow these steps:</p>
-
 <ol>
-  <li>Import the <code>websocket_connection</code> module:
-    <pre><code>from websocket_connection import WebSocketConnection</code></pre>
-  </li>
-  <li>Instantiate the <code>WebSocketConnection</code> class with the required parameters:
-    <pre><code>ws = WebSocketConnection(url='wss://your_websocket_url', on_message_callback=handle_message)</code></pre>
-  </li>
+  <li>Import the <code>websocket_connection</code> module: <code>from websocket_connection import WebSocketConnection</code></li>
+  <li>Instantiate the <code>WebSocketConnection</code> class with the required parameters: <code>ws = WebSocketConnection(url='wss://your_websocket_url', on_message_callback=handle_message)</code></li>
   <li>Define the <code>handle_message</code> function to process incoming WebSocket messages.</li>
-  <li>Start the WebSocket connection:
-    <pre><code>ws.start()</code></pre>
-  </li>
+  <li>Start the WebSocket connection: <code>ws.start()</code></li>
 </ol>
 
 <h2>Server to Get Data from Broker</h2>
 
-<p>To create a server that retrieves data from the broker and sends it to the client, follow these steps:</p>
-
 <ol>
-  <li>Import the required modules:
-    <pre><code>from http.server import BaseHTTPRequestHandler, HTTPServer
-from api_helper import APIHelper</code></pre>
-  </li>
+  <li>Import the required modules: <code>from http.server import BaseHTTPRequestHandler, HTTPServer</code></li>
   <li>Define the <code>DataHandler</code> class to handle HTTP requests and retrieve data from the broker using the <code>APIHelper</code> class.</li>
   <li>Implement the server logic within the <code>DataHandler</code> class.</li>
-  <li>Start the server:
-    <pre><code>if __name__ == '__main__':
-    server_address = ('', 8000)  <!-- Replace 8000 with your desired port -->
-    httpd = HTTPServer(server_address, DataHandler)
-    httpd.serve_forever()</code></pre>
-  </li>
+  <li>Start the server: <code>server_address = ('', 8000) <!-- Replace 8000 with your desired port --></code></li>
 </ol>
 
 <h2>License</h2>
