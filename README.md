@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>API Helper and WebSocket Connection README</title>
+
 </head>
 <body>
 
@@ -15,7 +15,7 @@
 
 <ol>
   <li>Clone the repository:
-    <pre><code>git clone https://github.com/your_username/api-websocket-helper.git</code></pre>
+    <pre><code>git clone https://github.com/dinesh851/api_helper</code></pre>
   </li>
   <li>Navigate to the project directory:
     <pre><code>cd api-websocket-helper</code></pre>
