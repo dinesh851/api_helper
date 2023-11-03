@@ -4,9 +4,25 @@
  
 </head>
 <body>
-
 <h1>API Helper and WebSocket Connection README</h1>
 
+<h2>Introduction</h2>
+
+<p>This repository contains a Python-based API helper and WebSocket connection implementation. The purpose of this project is to facilitate the communication between a broker and a server, allowing the seamless transfer of data in real-time.</p>
+
+<h2>Setup</h2>
+
+<ol>
+  <li>Clone the repository:
+    <pre><code>git clone https://github.com/dinesh851/api_helper.git</code></pre>
+  </li>
+  <li>Navigate to the project directory:
+    <pre><code>cd api_helper</code></pre>
+  </li>
+  <li>Install the required dependencies:
+    <pre><code>pip install -r requirements.txt</code></pre>
+  </li>
+</ol>
 <h2>Usage</h2>
 
 <ol>
