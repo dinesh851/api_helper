@@ -11,6 +11,7 @@
 <p>This repository contains a Python-based API helper and WebSocket connection implementation. The purpose of this project is to facilitate the communication between a broker and a server, allowing the seamless transfer of data in real-time.</p>
 
 <h2>Setup</h2>
+<!-- lksmfowmdf -->
 
 <ol>
   <li>Clone the repository:
